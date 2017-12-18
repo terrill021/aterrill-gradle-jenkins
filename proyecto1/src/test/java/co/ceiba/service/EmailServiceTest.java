@@ -4,7 +4,6 @@ import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.Mockito;
 
 public class EmailServiceTest {
 
@@ -20,7 +19,7 @@ public class EmailServiceTest {
 		// arrange
 		
 		// act 
-		String res = emailService.sendMail(Mockito.anyString());
+		String res = emailService.sendMail("");
 		// assert
 		assertNotNull(res);
 	}
